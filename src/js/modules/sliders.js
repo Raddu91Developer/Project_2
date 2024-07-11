@@ -44,12 +44,12 @@ const sliders = (slides, dir, prev, next) => {
 
 	function activateAnimation() {
 		if (dir === 'vertical') {
-			paused = setInterval(function() {
+			paused = setInterval(function () {
 				plusSlides(1);
 				items[slideIndex - 1].classList.add('slideInDown');
 			}, 3000);
 		} else {
-			paused = setInterval(function() {
+			paused = setInterval(function () {
 				plusSlides(1);
 				items[slideIndex - 1].classList.remove('slideInRight');
 				items[slideIndex - 1].classList.add('slideInLeft');
@@ -63,7 +63,7 @@ const sliders = (slides, dir, prev, next) => {
 		clearInterval(paused);
 	});
 	items[0].parentNode.addEventListener('mouseleave', () => {
-    activateAnimation();
+		activateAnimation();
 	});
 };
 

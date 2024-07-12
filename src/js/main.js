@@ -4,6 +4,7 @@ import mask from './modules/mask';
 import modals from './modules/modals';
 import sliders from './modules/sliders';
 import showMoreStyles from './modules/showMoreStyles';
+import calc from './modules/clac';
 
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
@@ -16,4 +17,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	checkTextInputs('[name="name"]');
   checkTextInputs('[name="message"]');
   showMoreStyles('.button-styles', '#styles .row');
+  calc('#size', '#material', '#options', '.promocode', '.calc-price');
 });

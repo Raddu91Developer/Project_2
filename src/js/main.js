@@ -5,17 +5,19 @@ import modals from './modules/modals';
 import sliders from './modules/sliders';
 import showMoreStyles from './modules/showMoreStyles';
 import calc from './modules/clac';
+import filter from './modules/filter';
 
 window.addEventListener('DOMContentLoaded', () => {
-	'use strict';
+  'use strict';
 
-	modals();
-	sliders('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
-	sliders('.main-slider-item', '.vertical');
-	forms();
-	mask('[name="phone"]');
-	checkTextInputs('[name="name"]');
+  modals();
+  sliders('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
+  sliders('.main-slider-item', '.vertical');
+  forms();
+  mask('[name="phone"]');
+  checkTextInputs('[name="name"]');
   checkTextInputs('[name="message"]');
   showMoreStyles('.button-styles', '#styles .row');
   calc('#size', '#material', '#options', '.promocode', '.calc-price');
+  filter();
 });
